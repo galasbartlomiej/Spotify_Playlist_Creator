@@ -110,6 +110,7 @@ def frame1():
     widgets["username_label"].append(username_label)
 
     username_input = QLineEdit(sp_conf["username"])
+    username_input.setStyleSheet("color: 'white';")
     widgets["username_input"].append(username_input)
 
     client_id_label = QLabel("Client ID:")
@@ -124,6 +125,7 @@ def frame1():
     widgets["client_id_label"].append(client_id_label)
 
     client_id_input = QLineEdit(sp_conf["id"])
+    client_id_input.setStyleSheet("color: 'white';")
     widgets["client_id_input"].append(client_id_input)
 
     client_secret_label = QLabel("Client Secret:")
@@ -138,6 +140,7 @@ def frame1():
     widgets["client_secret_label"].append(client_secret_label)
 
     client_secret_input = QLineEdit(sp_conf["secret"])
+    client_secret_input.setStyleSheet("color: 'white';")
     widgets["client_secret_input"].append(client_secret_input)
 
     redirect_uris_label = QLabel("Redirect URIs:")
@@ -152,6 +155,7 @@ def frame1():
     widgets["redirect_uris_label"].append(redirect_uris_label)
 
     redirect_uris_input = QLineEdit(sp_conf["redirect"])
+    redirect_uris_input.setStyleSheet("color: 'white';")
     widgets["redirect_uris_input"].append(redirect_uris_input)
 
     button_save_configuration = QPushButton("Save Configuration")
@@ -180,6 +184,7 @@ def frame1():
     widgets["playlist_name_label"].append(playlist_name_label)
 
     playlist_name_input = QLineEdit()
+    playlist_name_input.setStyleSheet("color: 'white';")
     widgets["playlist_name_input"].append(playlist_name_input)
 
     list_of_songs_label = QLabel("List of songs:")
@@ -194,6 +199,7 @@ def frame1():
     widgets["list_of_songs_label"].append(list_of_songs_label)
 
     list_of_songs_input = QTextEdit()
+    list_of_songs_input.setStyleSheet("color: 'white';")
     widgets["list_of_songs_input"].append(list_of_songs_input)
 
     button_create_playlist = QPushButton("Create Playlist on Spotify")
